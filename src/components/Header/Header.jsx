@@ -1,6 +1,5 @@
 import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
-import "./header.css";
+import "./header.scss";
 
 const Header = () => (
 	<header>
@@ -8,8 +7,8 @@ const Header = () => (
 			Mark Wood
 		</a>
 		<div className="page-links">
-			<a href="/"> Home </a>
-			<a href="/contact"> Contact </a>
+			<a className="page-links--link" href="/"> Home </a>
+			<a className="page-links--link" href="/contact"> Contact </a>
 		</div>
 	</header>
 );
