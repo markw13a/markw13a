@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "gatsby";
 import Layout from "../components/Layout/Layout";
-import { LinkButton, Button } from "../components/Button/Button";
+import { LinkButton } from "../components/Button/Button";
+import { ProjectCard } from "../components/ProjectCard/ProjectCard";
 import SEO from "../components/seo";
 
 const Introduction = () => (
@@ -17,21 +17,15 @@ const RecentProjects = () => (
       title="Faclair na Gàidhlig"
       to="/portfolio/faclair"
       description="The most comprehensive Gaelic dictionary available for Android"
-
+      imageSrc="/images/faclair.png"
     />
   </>
 );
-const ProjectCard = ({ title, imageSrc, description, to }) => (
-  <Link className="project-card" to={to}>
-    <h1 className="project-card--title"> 
-      { title } 
-    </h1>
-    <img className="project-card--image" src={imageSrc} />
-    <p className="project-card--description"> 
-      { description } 
-    </p>
-    <Button text="Find out more" />
-  </Link>
+
+const Services = () => (
+  <div className="services">
+    <h1> Services </h1>
+  </div>
 );
 
 const IndexPage = () => (
@@ -39,6 +33,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <Introduction />
     <RecentProjects />
+    <Services />
     <LinkButton text="Get in touch" to="/contact" />
   </Layout>
 )
