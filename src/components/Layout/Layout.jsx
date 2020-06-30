@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Header from "../Header/Header"
+import { Footer } from "../Footer/Footer";
 import "./layout.scss"
 
 const Layout = ({ children }) => (
@@ -21,9 +22,7 @@ const Layout = ({ children }) => (
       }}
     >
       <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()} Mark Wood
-      </footer>
+    <Footer />
     </div>
   </>
 );
