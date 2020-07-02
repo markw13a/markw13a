@@ -1,6 +1,7 @@
 ---
 slug: "/portfolio/faclair"
 title: "Faclair na Gàidhlig"
+technologies: ["React Native", "Redux"]
 marketingTagline: "If you would like to discuss how a mobile app could benefit your organisation, then please..."
 ---
 

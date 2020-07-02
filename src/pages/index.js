@@ -7,7 +7,15 @@ import SEO from "../components/seo";
 const Introduction = () => (
   <>
     <h1> Web developer </h1>
-    <p> Hi, I'm Mark: a Glasgow-based freelancer with experience in all aspects of web development. I can help you to get your first website online, or make changes to an existing website. </p>
+    <p> 
+      I am a Glasgow based web developer from the Isle of Lewis. Technology &mdash; mainly creating websites and mobile apps &mdash; is what I'm best at, but I also have a strong interest in design and business. 
+    </p>
+    <p>
+      I enjoy figuring out how to make life easier for businesses and their customers.
+    </p>
+    <p>
+      Whether you know what you want, or are just beginning to explore how technology could improve the way you do business, I can help. 
+    </p>
   </>
 );
 const RecentProjects = () => (

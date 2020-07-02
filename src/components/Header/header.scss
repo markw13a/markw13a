@@ -11,10 +11,18 @@ header {
 
 /* Suggested that this should generally be 250px x 100px */
 .home-logo {
-	/* Want this to always be the same size, so use px */
-	font-size: 35px;
-	color: #fff;
-	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+
+	& > * {
+		color: #fff;
+	}
+
+	a {
+		/* Want this to always be the same size, so use px */
+		font-size: 35px;
+		text-decoration: none;
+	}
 }
 
 .page-links {
