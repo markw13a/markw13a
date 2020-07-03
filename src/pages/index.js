@@ -1,8 +1,9 @@
 import React from "react";
-import Layout from "../components/Layout/Layout";
-import { LinkButton } from "../components/Button/Button";
-import { ProjectCard } from "../components/ProjectCard/ProjectCard";
-import SEO from "../components/seo";
+import Layout from "../components/Layout";
+import { LinkButton } from "../components/Button";
+import { ProjectCard } from "../components/ProjectCard";
+import SEO from "../components/Seo";
+import "../styles/index.scss";
 
 const Introduction = () => (
   <>
@@ -34,7 +35,7 @@ const AboutMe = () => (
   <div className="about-me">
     <h1> About me </h1>
     <p>
-      I have worked as a salaried full-stack web developer for the last two and a half years. My off-hours are often spent working on my own projects, through which I have learned about mobile development, product development and design.
+      I have worked as a salaried web developer for the last two and a half years. My off-hours are often spent working on my own projects, through which I have learned about mobile development, product development and design.
     </p>
     <p>
       I am interested in the entire process of creating an app or website, and am always trying to broaden my skills. You can find out a bit more about me on my <a href="https://www.linkedin.com/in/mark-wood-922a8912a/"> Linkedin page</a>.

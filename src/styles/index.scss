@@ -1,0 +1,19 @@
+@import "./mixins";
+@import "./button";
+@import "./footer";
+@import "./header"; 
+@import "./layout";
+@import "./projectCard";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+
+html {
+	font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+	font-size: $font-large;
+}
+
+body {
+	font-size: $font-medium;
+}

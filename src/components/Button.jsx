@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "gatsby";
-import "./button.scss";
 
 const Button = ({ text="Click", onClick, className }) => (
 	<button 

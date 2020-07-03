@@ -1,6 +1,5 @@
 import React from "react";
-import { LinkButton } from "../Button/Button";
-import "./projectCard.scss";
+import { LinkButton } from "./Button";
 
 const ProjectCard = ({ title, imageSrc, description, to }) => (
 	<div className="project-card" to={to}>
