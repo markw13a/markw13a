@@ -20,32 +20,3 @@ h1, h2 {
 body {
 	font-size: $font-medium;
 }
-
-.introduction {
-	max-width: none;
-	background-color: $primary-color;
-	color: #fff;
-	padding: 1.5rem;
-
-	.content {
-		@extend .grid;
-		display: flex;
-	}
-
-	.birlinn {
-		width: 250px;
-		height: 250px;
-		color: #fff !important;
-	}
-
-	h1 {
-		margin-top: 0;
-	}
-
-	&__ctas {
-		display: flex;
-	}
-	&__ctas > * {
-		margin-right: 1rem;
-	}
-}

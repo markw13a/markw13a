@@ -7,6 +7,26 @@ footer {
 	padding: 0.75rem;
 
 	.content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 		@extend .grid;
+	}
+
+	.contact-information {
+		display: flex;
+		align-items: center;
+	}
+
+	.contact-information__item {
+		&:not(:last-child)::after {
+			content: "";
+			margin: 0.5rem;
+			border-right: 1px solid #fff;
+		}
+	}
+
+	.linkedin-logo {
+		width: 30px;
 	}
 }
