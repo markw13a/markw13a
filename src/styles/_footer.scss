@@ -1,4 +1,12 @@
 footer {
+	max-width: none;
 	position: static;
 	bottom: 0;
+	background-color: $primary-color;
+	color: #fff;
+	padding: 0.75rem;
+
+	.content {
+		@extend .grid;
+	}
 }

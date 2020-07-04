@@ -2,7 +2,9 @@ import React from "react";
 
 const Footer = () => (
 	<footer>
-        © {new Date().getFullYear()} Mark Wood
+		<div className="content">
+	        © {new Date().getFullYear()} Mark Wood
+		</div>
 	</footer>
 );
 

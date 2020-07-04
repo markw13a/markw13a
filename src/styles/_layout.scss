@@ -3,7 +3,7 @@ body {
 	background-color: $grey;
 }
 
-main > *, footer {
+main > * {
 	@extend .grid;
     padding: 0px 1.0875rem 1.45rem;
 }
