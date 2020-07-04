@@ -44,9 +44,8 @@ body {
 
 	&__ctas {
 		display: flex;
-		justify-content: center;
 	}
 	&__ctas > * {
-		margin: auto 1rem;
+		margin-right: 1rem;
 	}
 }
