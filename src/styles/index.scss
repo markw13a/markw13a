@@ -29,6 +29,13 @@ body {
 
 	.content {
 		@extend .grid;
+		display: flex;
+	}
+
+	.birlinn {
+		width: 250px;
+		height: 250px;
+		color: #fff !important;
 	}
 
 	h1 {

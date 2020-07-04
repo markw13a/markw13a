@@ -8,16 +8,21 @@ import "../styles/index.scss";
 const Introduction = () => (
   <div className="introduction">
     <div className="content">
-      <h1> Web developer </h1>
-      <p> 
-        I am a Glasgow based web developer from the Isle of Lewis. Coding websites and mobile apps is what I'm best at, but I also have a strong interest in design and business. 
-      </p>
-      <p>
-        Whether you know what you want, or are just beginning to explore how an app or website could improve the way you do business, I can help. 
-      </p>
-      <div className="introduction__ctas">
-        <LinkButton text="Contact me" to="/contat" />
-        <LinkButton text="See my work" type="outline" to="/#portfolio" />
+      <div className="text">
+        <h1> Web developer </h1>
+        <p> 
+          I am a Glasgow based web developer from the Isle of Lewis. Coding websites and mobile apps is what I'm best at, but I also have a strong interest in design and business. 
+        </p>
+        <p>
+          Whether you know what you want, or are just beginning to explore how an app or website could improve the way you do business, I can help. 
+        </p>
+        <div className="introduction__ctas">
+          <LinkButton text="Contact me" to="/contat" />
+          <LinkButton text="See my work" type="outline" to="/#portfolio" />
+        </div>
+      </div>
+      <div className="image-container">
+        <img className="birlinn" src="/icons/birlinn_trace.svg" />
       </div>
     </div>
   </div>
