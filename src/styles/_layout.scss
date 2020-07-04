@@ -3,7 +3,17 @@ body {
 	background-color: $grey;
 }
 
-main > * {
-	@extend .grid;
-    padding: 0px 1.0875rem 1.45rem;
+main {
+	flex: 1;
+	& > * {
+		@extend .grid;
+	}
+}
+
+.layout {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	width: 100%;
+	height: 100%;
 }

@@ -17,7 +17,7 @@ const Introduction = () => (
           Whether you know what you want, or are just beginning to explore how an app or website could improve the way you do business, I can help. 
         </p>
         <div className="introduction__ctas">
-          <LinkButton text="Contact me" to="/contact" />
+          <LinkButton text="Contact me" to="/#contact" />
           <LinkButton text="See my work" type="outline" to="/#portfolio" />
         </div>
       </div>
@@ -41,7 +41,7 @@ const RecentProjects = () => (
 );
 
 const AboutMe = () => (
-  <div className="about-me">
+  <div id="about" className="about-me">
     <h1> About me </h1>
     <p>
       I have worked as a salaried web developer for the last two and a half years. My off-hours are often spent working on my own projects, through which I have learned about mobile development, product development and design.
@@ -52,12 +52,28 @@ const AboutMe = () => (
   </div>
 );
 
+const Contact = () => (
+  <div id="contact">
+		<h1> Contact </h1>
+		<p> You can get in touch via phone, email or LinkedIn to discuss your project. </p>
+		<ul className="contact-information">
+			<li>
+				Phone: 07594515541
+			</li>
+			<li>
+				Email: markw13a@gmail.com
+			</li>
+		</ul>
+  </div>
+);
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Introduction />
     <RecentProjects />
     <AboutMe />
+    <Contact />
   </Layout>
 )
 

@@ -8,7 +8,8 @@ const Header = () => (
 		</div>
 		<div className="page-links">
 			<a className="page-links--link" href="/"> Home </a>
-			<a className="page-links--link" href="/contact"> Contact </a>
+			<a className="page-links--link" href="/#about"> About </a>
+			<a className="page-links--link" href="/#contact"> Contact </a>
 		</div>
 	</header>
 );

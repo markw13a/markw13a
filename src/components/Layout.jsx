@@ -10,12 +10,12 @@ import PropTypes from "prop-types"
 import Header from "./Header"
 import { Footer } from "./Footer";
 
-const Layout = ({ children }) => (
-  <>
+const Layout = ({ children, className }) => (
+  <div className="layout">
     <Header />
-    <main> {children} </main>
+    <main className={className}> {children} </main>
     <Footer />
-  </>
+  </div>
 );
 
 Layout.propTypes = {

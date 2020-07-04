@@ -1,19 +1,26 @@
 import React from "react";
 import { graphql } from "gatsby";
+import Layout from "../components/Layout";
+import { LinkButton } from "../components/Button";
 
 const Portfolio = ({ data }) => {
 	const { markdownRemark } = data;
 	const { frontmatter, html } = markdownRemark;
 
 	return (
-		<div>
+		<Layout className="portfolio">
+			<h1> 
+				{ frontmatter.title } 
+			</h1>
 			<div dangerouslySetInnerHTML={{ __html: html }} />
 			{
 				frontmatter.marketingTagline
 				&& <div dangerouslySetInnerHTML={{ __html: frontmatter.marketingTagline }} />
 			}
-			<a href="/contact"> Get in touch </a>
-		</div>
+			<div className="link-container">
+				<LinkButton text="Contact me" to="/#contact" />
+			</div>
+		</Layout>
 	);
 };
 

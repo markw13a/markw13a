@@ -1,10 +1,11 @@
 footer {
-	max-width: none;
-	position: static;
-	bottom: 0;
 	background-color: $primary-color;
 	color: #fff;
 	padding: 0.75rem;
+
+	max-width: none;
+	width: 100%;
+	box-sizing: border-box;
 
 	.content {
 		display: flex;
