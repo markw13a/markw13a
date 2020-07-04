@@ -4,16 +4,42 @@
 @import "./header"; 
 @import "./layout";
 @import "./projectCard";
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 html {
 	font-family: 'Roboto', sans-serif;
 }
 
 h1, h2 {
+	font-family: Montserrat;
 	font-size: $font-large;
 }
 
 body {
 	font-size: $font-medium;
+}
+
+.introduction {
+	max-width: none;
+	background-color: $primary-color;
+	color: #fff;
+	padding: 1.5rem;
+
+	.content {
+		@extend .grid;
+	}
+
+	h1 {
+		margin-top: 0;
+	}
+
+	&__ctas {
+		display: flex;
+		justify-content: center;
+	}
+	&__ctas > * {
+		margin: auto 1rem;
+	}
 }

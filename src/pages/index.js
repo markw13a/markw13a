@@ -6,21 +6,24 @@ import SEO from "../components/Seo";
 import "../styles/index.scss";
 
 const Introduction = () => (
-  <>
-    <h1> Web developer </h1>
-    <p> 
-      I am a Glasgow based web developer from the Isle of Lewis. Technology &mdash; mainly creating websites and mobile apps &mdash; is what I'm best at, but I also have a strong interest in design and business. 
-    </p>
-    <p>
-      I enjoy figuring out how to make life easier for businesses and their customers.
-    </p>
-    <p>
-      Whether you know what you want, or are just beginning to explore how an app or website could improve the way you do business, I can help. 
-    </p>
-  </>
+  <div className="introduction">
+    <div className="content">
+      <h1> Web developer </h1>
+      <p> 
+        I am a Glasgow based web developer from the Isle of Lewis. Coding websites and mobile apps is what I'm best at, but I also have a strong interest in design and business. 
+      </p>
+      <p>
+        Whether you know what you want, or are just beginning to explore how an app or website could improve the way you do business, I can help. 
+      </p>
+      <div className="introduction__ctas">
+        <LinkButton text="Contact me" to="/contat" />
+        <LinkButton text="See my work" type="outline" to="/#portfolio" />
+      </div>
+    </div>
+  </div>
 );
 const RecentProjects = () => (
-  <>
+  <div id="portfolio">
     <h1> Recent projects </h1>
     <ProjectCard 
       title="Faclair na Gàidhlig"
@@ -28,7 +31,7 @@ const RecentProjects = () => (
       description="The most comprehensive Gaelic dictionary available for Android"
       imageSrc="/images/faclair.png"
     />
-  </>
+  </div>
 );
 
 const AboutMe = () => (
@@ -56,7 +59,6 @@ const IndexPage = () => (
     <RecentProjects />
     <AboutMe />
     <Services />
-    <LinkButton text="Get in touch" to="/contact" />
   </Layout>
 )
 

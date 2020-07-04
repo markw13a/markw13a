@@ -2,3 +2,8 @@ body {
 	margin: 0;
 	background-color: $grey;
 }
+
+main > *, footer {
+	@extend .grid;
+    padding: 0px 1.0875rem 1.45rem;
+}

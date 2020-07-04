@@ -1,7 +1,7 @@
 header {
 	display: flex;
 	justify-content: space-between;
-	padding: 1.5rem;
+	padding: 0.75rem 1.5rem;
 
 	background-color: $primary-color;
 	border-bottom: 1px solid darken($primary-color, 10%);
@@ -10,7 +10,9 @@ header {
 /* Suggested that this should generally be 250px x 100px */
 .home-logo {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	align-items: center;
+	font-family: Montserrat;
 
 	& > * {
 		color: #fff;
@@ -20,6 +22,13 @@ header {
 		/* Want this to always be the same size, so use px */
 		font-size: 35px;
 		text-decoration: none;
+	}
+
+	// Put a line between "Mark Wood" and "web developer"
+	a::after {
+		content: "";
+		border-right: 1px solid #fff;
+		margin: 0 0.5rem;
 	}
 }
 
