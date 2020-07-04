@@ -22,7 +22,7 @@ const Introduction = () => (
         </div>
       </div>
       <div className="image-container">
-        <img className="birlinn" src="/icons/birlinn_trace.svg" />
+        <img className="birlinn" src="/images/birlinn_trace.svg" />
       </div>
     </div>
   </div>
@@ -30,11 +30,12 @@ const Introduction = () => (
 const RecentProjects = () => (
   <div id="portfolio">
     <h1> Recent projects </h1>
+    <p> A selection of some of the things I have been working on. </p>
     <ProjectCard 
       title="Faclair na Gàidhlig"
       to="/portfolio/faclair"
-      description="The most comprehensive Gaelic dictionary available for Android"
-      imageSrc="/images/faclair.png"
+      description="The most comprehensive Gaelic dictionary available on the Google Play Store."
+      subtitle="Android app"
     />
   </div>
 );
@@ -51,19 +52,12 @@ const AboutMe = () => (
   </div>
 );
 
-const Services = () => (
-  <div className="services">
-    <h1> Services </h1>
-  </div>
-);
-
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Introduction />
     <RecentProjects />
     <AboutMe />
-    <Services />
   </Layout>
 )
 

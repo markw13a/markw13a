@@ -1,13 +1,17 @@
 import React from "react";
 import { LinkButton } from "./Button";
 
-const ProjectCard = ({ title, imageSrc, description, to }) => (
+const ProjectCard = ({ title, description, to, subtitle }) => (
 	<div className="project-card" to={to}>
-	  <h1 className="project-card--title"> 
-		{ title } 
-	  </h1>
-	  <img className="project-card--image" src={imageSrc} />
-	  <p className="project-card--description"> 
+	  <div className="project-card__title-container"> 
+		<h1 className="project-card__title"> 
+			{ title } 
+		</h1>
+		<span className="project-card__subtitle"> 
+			{ subtitle } 
+		</span> 
+	  </div>
+	  <p className="project-card__description"> 
 		{ description } 
 	  </p>
 	  <LinkButton text="Find out more" to={to} />
