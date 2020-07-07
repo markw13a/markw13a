@@ -29,3 +29,26 @@
 		margin-right: 1rem;
 	}
 }
+
+// Spacing between sections
+#portfolio {
+	margin: 0 auto 3rem;
+}
+
+#about, #contact {
+	margin: 3rem auto;
+}
+
+ul {
+	padding: 0;
+}
+
+@media (max-width: 700px) {
+	.introduction .image-container {
+		display: none;
+	}
+
+	#portfolio, #about, #contact {
+		padding: 0 1.5rem;
+	}
+}

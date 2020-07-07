@@ -63,6 +63,9 @@ const Contact = () => (
 			<li>
 				Email: markw13a@gmail.com
 			</li>
+      <li>
+        <a href="https://www.linkedin.com/in/mark-wood-922a8912a/"> LinkedIn </a>
+      </li>
 		</ul>
   </div>
 );
