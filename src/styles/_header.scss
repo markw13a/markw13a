@@ -5,60 +5,92 @@ header {
 
 	background-color: $primary-color;
 	border-bottom: 1px solid darken($primary-color, 10%);
+
+	/* Suggested that this should generally be 250px x 100px */
+	.home-logo {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		font-family: Montserrat;
+
+		& > * {
+			color: #fff;
+		}
+
+		a {
+			/* Want this to always be the same size, so use px */
+			font-size: 35px;
+			text-decoration: none;
+		}
+
+		// Put a line between "Mark Wood" and "web developer"
+		a::after {
+			content: "";
+			border-right: 1px solid #fff;
+			margin: 0 0.5rem;
+		}
+	}
+
+	.page-links {
+		align-self: center;
+
+		&--link {
+			color: #fff;
+			text-decoration: none;
+		}
+
+		&--link:hover {
+			text-decoration: underline;
+			text-decoration-color: $secondary-color;
+		}
+
+		/* Bit of padding between the links */
+		a:not(:last-child) {
+			padding-right: 1rem;;
+		}
+	}
 }
 
-/* Suggested that this should generally be 250px x 100px */
-.home-logo {
+.mobile-header {
 	display: flex;
-	flex-direction: row;
-	align-items: center;
-	font-family: Montserrat;
+	flex-direction: column;
 
-	& > * {
-		color: #fff;
+	.home-logo {
+		width: 100%;
+		justify-content: space-between;
 	}
 
-	a {
-		/* Want this to always be the same size, so use px */
-		font-size: 35px;
-		text-decoration: none;
+	.hamburger-menu {
+		display: flex;
+		&__button {
+			background-color: transparent;
+			border: none;
+			cursor: pointer;
+		}
 	}
 
-	// Put a line between "Mark Wood" and "web developer"
-	a::after {
-		content: "";
-		border-right: 1px solid #fff;
-		margin: 0 0.5rem;
-	}
-}
+	.page-links {
+		display: flex;
+		flex-direction: column;
 
-.page-links {
-	align-self: center;
+		padding-right: 0;
 
-	&--link {
-		color: #fff;
-		text-decoration: none;
-	}
-
-	&--link:hover {
-		text-decoration: underline;
-		text-decoration-color: $secondary-color;
-	}
-
-	/* Bit of padding between the links */
-	a:not(:last-child) {
-		padding-right: 1rem;;
+		&--link:not(:first-child) {
+			margin-top: 2rem;
+		}
 	}
 }
 
 @media (max-width: 700px) {
-	.home-logo {
-		a::after {
-			content: none;
-		}
-
-		span { 
-			display: none; 
+	header {
+		.home-logo {
+			a::after {
+				content: none;
+			}
+	
+			span { 
+				display: none; 
+			}
 		}
 	}
 }
