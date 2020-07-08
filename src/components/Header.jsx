@@ -3,10 +3,13 @@ import { useEffect } from "react";
 import hamburgerIcon from "../images/hamburger_icon.svg";
 
 const useWindowDimensions = () => {
-	const [ width, setWidth ] = useState(window.innerWidth);
-	const [ height, setHeight ] = useState(window.innerHeight);
+	const [ width, setWidth ] = useState();
+	const [ height, setHeight ] = useState();
 
 	useEffect(() => {
+		setWidth(window.innerWidth);
+		setHeight(window.innerHeight);
+
 		const handleResize = () => {
 			setWidth(window.innerWidth);
 			setHeight(window.innerHeight);
