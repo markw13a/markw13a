@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import { LinkButton } from "../components/Button";
 import { ProjectCard } from "../components/ProjectCard";
 import SEO from "../components/Seo";
+import birlinnImage from "../images/birlinn_trace.svg";
 import "../styles/indexPage.scss";
 
 const Introduction = () => (
@@ -22,11 +23,14 @@ const Introduction = () => (
         </div>
       </div>
       <div className="image-container">
-        <img className="birlinn" src="/images/birlinn_trace.svg" />
+        <img className="birlinn" src={birlinnImage} />
       </div>
     </div>
   </div>
 );
+
+// TODO: would prefer if the project details were read directly from the .md file
+// Would be nice if I could just add a new .md file and have this automatically add a new project card here
 const RecentProjects = () => (
   <div id="portfolio">
     <h1> Recent projects </h1>

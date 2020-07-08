@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import { LinkButton } from "../components/Button";
+import SEO from "../components/Seo";
 
 const Portfolio = ({ data }) => {
 	const { markdownRemark } = data;
@@ -9,6 +10,7 @@ const Portfolio = ({ data }) => {
 
 	return (
 		<Layout className="portfolio">
+		    <SEO title={frontmatter.title} />
 			<h1> 
 				{ frontmatter.title } 
 			</h1>

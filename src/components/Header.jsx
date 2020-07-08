@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
+import hamburgerIcon from "../images/hamburger_icon.svg";
 
 const useWindowDimensions = () => {
 	const [ width, setWidth ] = useState(window.innerWidth);
@@ -33,7 +34,7 @@ const PageLinks = () => (
 const HamburgerMenu = ({ isOpen, setIsOpen }) => (
 	<div className="hamburger-menu">
 		<button className="hamburger-menu__button" onClick={() => setIsOpen(!isOpen)}>
-			<img alt="hamburger-menu" src="/images/hamburger_icon.svg" />
+			<img alt="hamburger-menu" src={hamburgerIcon} />
 		</button>
 	</div>
 );
