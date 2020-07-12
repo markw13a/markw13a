@@ -1,29 +1,5 @@
 import React, { useState } from "react";
-import { useEffect } from "react";
 import hamburgerIcon from "../images/hamburger_icon.svg";
-
-const useWindowDimensions = () => {
-	const [ width, setWidth ] = useState();
-	const [ height, setHeight ] = useState();
-
-	useEffect(() => {
-		setWidth(window.innerWidth);
-		setHeight(window.innerHeight);
-
-		const handleResize = () => {
-			setWidth(window.innerWidth);
-			setHeight(window.innerHeight);
-		}
-
-		window.addEventListener("resize", handleResize);
-		return () => window.removeEventListener("resize", handleResize);
-	}, [ setWidth, setHeight ]);
-
-	return ({
-		width,
-		height
-	});
-};
 
 // Expect one of PageLinks or Hamburger menu to be hidden by CSS at any given time
 const PageLinks = () => (
@@ -56,21 +32,26 @@ const MobileHeader = () => {
 	);
 };
 
-const Header = () => {
-	const { width } = useWindowDimensions();
+const DesktopHeader = () => (
+	<header className="desktop-header">
+		<div className="home-logo">
+			<a href="/"> Mark Wood </a>
+			<span> Web developer </span>
+		</div>
+		<PageLinks />
+	</header>
+);
 
-	if( width < 700 ) {
-		return <MobileHeader />
-	}
-	
+const Header = () => {
+	// NB: Render both and use CSS to hide one of them
+	// Found that using JS to render lead to mobile menu "popping in"
+	// Heart of issue is that you can't check window.innerWidth on first render
+	// as Gatsby has no access to window object 
 	return (
-		<header>
-			<div className="home-logo">
-				<a href="/"> Mark Wood </a>
-				<span> Web developer </span>
-			</div>
-			<PageLinks />
-		</header>
+		<>
+			<DesktopHeader />
+			<MobileHeader />
+		</>
 	);
 };
 

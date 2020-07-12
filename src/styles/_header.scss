@@ -52,7 +52,8 @@ header {
 }
 
 .mobile-header {
-	display: flex;
+	// Hidden by default
+	display: none;
 	flex-direction: column;
 
 	.home-logo {
@@ -82,6 +83,13 @@ header {
 }
 
 @media (max-width: 700px) {
+	// Show mobile header
+	.desktop-header {
+		display: none;
+	}
+	.mobile-header {
+		display: flex;
+	}
 	header {
 		.home-logo {
 			a::after {
