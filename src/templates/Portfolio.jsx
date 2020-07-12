@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import { LinkButton } from "../components/Button";
 import SEO from "../components/Seo";
+import "../styles/indexPage.scss";
 
 const Portfolio = ({ data }) => {
 	const { markdownRemark } = data;
