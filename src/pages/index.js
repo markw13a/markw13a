@@ -3,7 +3,6 @@ import Layout from "../components/Layout";
 import { LinkButton } from "../components/Button";
 import { ProjectCard } from "../components/ProjectCard";
 import SEO from "../components/Seo";
-import birlinnImage from "../images/birlinn_trace.svg";
 import "../styles/indexPage.scss";
 
 const Introduction = () => (
@@ -21,9 +20,6 @@ const Introduction = () => (
           <LinkButton text="Contact me" to="/#contact" />
           <LinkButton text="See my work" type="outline" to="/#portfolio" />
         </div>
-      </div>
-      <div className="image-container">
-        <img className="birlinn" src={birlinnImage} />
       </div>
     </div>
   </div>
@@ -78,9 +74,11 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Introduction />
-    <RecentProjects />
-    <AboutMe />
-    <Contact />
+    <div className="layout__canvas">
+      <RecentProjects />
+      <AboutMe />
+      <Contact />
+    </div>
   </Layout>
 )
 

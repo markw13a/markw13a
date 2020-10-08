@@ -8,14 +8,9 @@
 	padding: 1.5rem;
 
 	.content {
+		max-width: 700px;
 		@extend .grid;
 		display: flex;
-	}
-
-	.birlinn {
-		width: 250px;
-		height: 250px;
-		color: #fff !important;
 	}
 
 	h1 {
@@ -44,10 +39,6 @@ ul {
 }
 
 @media (max-width: 700px) {
-	.introduction .image-container {
-		display: none;
-	}
-
 	#portfolio, #about, #contact {
 		padding: 0 1.5rem;
 	}
