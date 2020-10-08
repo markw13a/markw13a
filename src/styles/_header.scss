@@ -10,7 +10,7 @@ header {
 	.home-logo {
 		display: flex;
 		flex-direction: row;
-		align-items: center;
+		align-items: last baseline;
 		font-family: Montserrat;
 
 		& > * {
@@ -19,15 +19,8 @@ header {
 
 		a {
 			/* Want this to always be the same size, so use px */
-			font-size: 35px;
+			font-size: 30px;
 			text-decoration: none;
-		}
-
-		// Put a line between "Mark Wood" and "web developer"
-		a::after {
-			content: "";
-			border-right: 1px solid #fff;
-			margin: 0 0.5rem;
 		}
 	}
 

@@ -36,7 +36,6 @@ const DesktopHeader = () => (
 	<header className="desktop-header">
 		<div className="home-logo">
 			<a href="/"> Mark Wood </a>
-			<span> Web developer </span>
 		</div>
 		<PageLinks />
 	</header>
